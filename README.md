@@ -1,4 +1,4 @@
-Fixed twin of the Flagd demo target (acme-plumbing-portal). Fictional app. Do not deploy.
+Four-finding demo target for Flagd (one leaked secret, one vulnerable dependency, one XSS, one table without RLS). Fictional app. Do not deploy.
 
 # Acme Plumbing — Client Portal
 
