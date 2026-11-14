@@ -19,7 +19,8 @@ export default function JobNotes({ notes }: { notes: Note[] }) {
           <div className="text-xs text-slate-500">
             {note.author} · {formatDistanceToNow(note.created_at)}
           </div>
-          <p className="mt-1 whitespace-pre-wrap text-sm">{note.body}</p>
+          {/* Technicians format notes (bold, lists) in the tablet app, so render them as HTML. */}
+          <div className="mt-1 text-sm" dangerouslySetInnerHTML={{ __html: note.body }} />
         </li>
       ))}
     </ul>
